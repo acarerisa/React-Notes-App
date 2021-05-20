@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://cimbombom:cimbombom@cluster0.isk58.mongodb.net/notesDB?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://cimbombom:cimbombom@cluster0.isk58.mongodb.net/mytableDB");
 
 app.use("/",require("./route/noteRoute"));
 
